@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Photo Gallery</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="nature">Nature</button>
+            <button data-filter="flowers">Flowers</button>
+            <button data-filter="architecture">Architecture</button>
+            <button data-filter="people">People</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Images will be added dynamically by JavaScript -->
+        </div>
+        
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn">&times;</span>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="">
+                <div class="lightbox-nav">
+                    <button id="prev-btn">&#10094;</button>
+                    <button id="next-btn">&#10095;</button>
+                </div>
+                <div class="image-info">
+                    <p id="image-caption"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="img.js"></script>
+</body>
+</html>
